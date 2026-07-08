@@ -1,0 +1,19 @@
+# USTC SmokeRS four-class configuration used in the manuscript.
+data_root: /path/to/Wild_Fire2_final_split
+class_names:
+  - fognonsmoke
+  - fogsmoke
+  - nonsmoke
+  - smoke
+num_classes: 4
+img_size: 224
+batch_size: 16
+epochs: 60
+lr: 0.0001
+eta_min: 0.000001
+optimizer: Adam
+weight_decay: 0.0
+loss: standard CrossEntropyLoss
+scheduler: CosineAnnealingLR
+patience: 10
+seed: 42
