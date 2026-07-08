@@ -1,0 +1,19 @@
+name: lscatnet
+channels:
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.10
+  - pip
+  - numpy
+  - pandas
+  - scikit-learn
+  - matplotlib
+  - pillow
+  - tqdm
+  - pyyaml
+  - pytorch
+  - torchvision
+  - pip:
+      - timm>=0.9.0
+      - thop>=0.1.1.post2209072238
